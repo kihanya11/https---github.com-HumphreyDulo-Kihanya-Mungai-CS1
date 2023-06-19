@@ -44,7 +44,7 @@
             </div>
 
             <div class="buttons">
-                <a href="" class="btn btn-primary">Forgot Password?</a>
+                <a href="<?php echo base_url(''); ?>" class="btn btn-primary">Forgot Password?</a>
             </div>
 
             <div class="buttons">
