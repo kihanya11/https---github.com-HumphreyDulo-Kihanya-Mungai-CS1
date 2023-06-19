@@ -44,7 +44,7 @@
             </div>
 
             <div class="buttons">
-                <a href="" class="btn btn-primary">Login as administrator</a>
+                <a href="" class="btn btn-primary">Forgot Password?</a>
             </div>
 
             <div class="buttons">
