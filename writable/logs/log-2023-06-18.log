@@ -1,0 +1,54 @@
+INFO - 2023-06-18 12:01:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 12:14:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 12:19:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 12:30:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 12:35:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 12:48:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-18 12:54:07 --> Too few arguments to function App\Controllers\Activate::index(), 0 passed in C:\xampp\htdocs\codeigniter\framework-master\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\Activate.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Activate->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Activate))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\codeigniter\\framework-master\\public\\index.php')
+CRITICAL - 2023-06-18 13:03:52 --> Undefined variable $activation
+in APPPATH\Controllers\Activate.php on line 45.
+ 1 APPPATH\Controllers\Activate.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $activation', 'C:\\xampp\\htdocs\\codeigniter\\framework-master\\app\\Controllers\\Activate.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Activate->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Activate))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\codeigniter\\framework-master\\public\\index.php')
+CRITICAL - 2023-06-18 13:05:03 --> Undefined variable $user
+in APPPATH\Controllers\Activate.php on line 45.
+ 1 APPPATH\Controllers\Activate.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'C:\\xampp\\htdocs\\codeigniter\\framework-master\\app\\Controllers\\Activate.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Activate->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Activate))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\codeigniter\\framework-master\\public\\index.php')
+INFO - 2023-06-18 13:34:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 14:09:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 14:13:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 14:14:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 14:30:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-18 14:36:40 --> Invalid file: "activation-error.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('activation-error.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('activation-error', [], true)
+ 3 APPPATH\Controllers\Acterror.php(11): view('activation-error')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Acterror->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Acterror))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\codeigniter\\framework-master\\public\\index.php')
+INFO - 2023-06-18 14:38:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-18 14:55:20 --> Undefined array key "user_id"
+in APPPATH\Controllers\Activate.php on line 23.
+ 1 APPPATH\Controllers\Activate.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user_id"', 'C:\\xampp\\htdocs\\codeigniter\\framework-master\\app\\Controllers\\Activate.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Activate->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Activate))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\codeigniter\\framework-master\\public\\index.php')
+INFO - 2023-06-18 14:56:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
