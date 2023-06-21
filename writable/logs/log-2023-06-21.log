@@ -1,0 +1,505 @@
+INFO - 2023-06-21 07:38:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-21 07:38:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\PasswordReset::$session is deprecated in APPPATH\Controllers\PasswordReset.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PasswordReset->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 07:38:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-21 07:38:42 --> [DEPRECATED] Creation of dynamic property App\Controllers\PasswordReset::$session is deprecated in APPPATH\Controllers\PasswordReset.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PasswordReset->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 07:39:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-21 07:39:42 --> [DEPRECATED] Creation of dynamic property App\Controllers\PasswordReset::$session is deprecated in APPPATH\Controllers\PasswordReset.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PasswordReset->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-21 07:39:42 --> Too few arguments to function App\Controllers\PasswordReset::reset_form(), 0 passed in C:\xampp\htdocs\https---github.com-HumphreyDulo-CS1\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\PasswordReset.php on line 64.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PasswordReset->reset_form()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PasswordReset))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 07:40:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-21 07:40:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\PasswordReset::$session is deprecated in APPPATH\Controllers\PasswordReset.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PasswordReset->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-21 07:40:05 --> Undefined variable $resetToken
+in APPPATH\Views\password_reset_form.php on line 22.
+ 1 APPPATH\Views\password_reset_form.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resetToken', 'C:\\xampp\\htdocs\\https---github.com-HumphreyDulo-CS1\\app\\Views\\password_reset_form.php', 22)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\https---github.com-HumphreyDulo-CS1\\app\\Views\\password_reset_form.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('password_reset_form', [], true)
+ 5 APPPATH\Controllers\PasswordReset.php(65): view('password_reset_form')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PasswordReset->reset_form()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PasswordReset))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 07:42:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-21 07:42:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\PasswordReset::$session is deprecated in APPPATH\Controllers\PasswordReset.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PasswordReset->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-21 07:42:41 --> Undefined variable $resetToken
+in APPPATH\Controllers\PasswordReset.php on line 65.
+ 1 APPPATH\Controllers\PasswordReset.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resetToken', 'C:\\xampp\\htdocs\\https---github.com-HumphreyDulo-CS1\\app\\Controllers\\PasswordReset.php', 65)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PasswordReset->reset_form()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PasswordReset))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 07:43:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-21 07:43:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\PasswordReset::$session is deprecated in APPPATH\Controllers\PasswordReset.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PasswordReset->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-21 07:43:09 --> Too few arguments to function App\Controllers\PasswordReset::reset_form(), 0 passed in C:\xampp\htdocs\https---github.com-HumphreyDulo-CS1\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\PasswordReset.php on line 64.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PasswordReset->reset_form()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PasswordReset))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 07:52:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-21 07:52:03 --> [DEPRECATED] Creation of dynamic property App\Controllers\PasswordReset::$session is deprecated in APPPATH\Controllers\PasswordReset.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PasswordReset->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-21 07:52:03 --> Undefined variable $email
+in APPPATH\Controllers\PasswordReset.php on line 67.
+ 1 APPPATH\Controllers\PasswordReset.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $email', 'C:\\xampp\\htdocs\\https---github.com-HumphreyDulo-CS1\\app\\Controllers\\PasswordReset.php', 67)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PasswordReset->reset_form()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PasswordReset))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 08:20:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-21 08:20:43 --> [DEPRECATED] Creation of dynamic property App\Controllers\PasswordReset::$session is deprecated in APPPATH\Controllers\PasswordReset.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PasswordReset->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 08:20:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-21 08:20:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\PasswordReset::$session is deprecated in APPPATH\Controllers\PasswordReset.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PasswordReset->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 08:22:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-21 08:22:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\PasswordReset::$session is deprecated in APPPATH\Controllers\PasswordReset.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PasswordReset->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-21 08:22:51 --> Undefined array key "user_id"
+in APPPATH\Controllers\PasswordReset.php on line 109.
+ 1 APPPATH\Controllers\PasswordReset.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user_id"', 'C:\\xampp\\htdocs\\https---github.com-HumphreyDulo-CS1\\app\\Controllers\\PasswordReset.php', 109)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PasswordReset->save()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PasswordReset))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 08:35:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-21 08:35:22 --> [DEPRECATED] Creation of dynamic property App\Controllers\PasswordReset::$session is deprecated in APPPATH\Controllers\PasswordReset.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PasswordReset->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 08:35:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 08:35:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 08:35:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 08:35:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 08:36:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 08:36:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 08:36:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 08:36:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 08:36:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 08:36:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 08:36:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 08:37:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 08:37:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 08:37:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 08:43:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 08:44:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 08:45:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 08:45:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 08:45:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 08:45:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 08:45:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 08:45:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 08:45:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-21 08:45:56 --> [DEPRECATED] Creation of dynamic property App\Controllers\PasswordReset::$session is deprecated in APPPATH\Controllers\PasswordReset.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PasswordReset->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 08:46:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-21 08:46:01 --> [DEPRECATED] Creation of dynamic property App\Controllers\PasswordReset::$session is deprecated in APPPATH\Controllers\PasswordReset.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PasswordReset->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 08:46:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-21 08:46:19 --> [DEPRECATED] Creation of dynamic property App\Controllers\PasswordReset::$session is deprecated in APPPATH\Controllers\PasswordReset.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PasswordReset->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 09:13:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 15:48:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 15:48:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-21 15:48:35 --> [DEPRECATED] Creation of dynamic property App\Controllers\PasswordReset::$session is deprecated in APPPATH\Controllers\PasswordReset.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PasswordReset->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 15:48:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 15:48:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-21 15:48:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\PasswordReset::$session is deprecated in APPPATH\Controllers\PasswordReset.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PasswordReset->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 15:48:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-21 15:48:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\PasswordReset::$session is deprecated in APPPATH\Controllers\PasswordReset.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PasswordReset->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 15:48:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-21 15:48:55 --> [DEPRECATED] Creation of dynamic property App\Controllers\PasswordReset::$session is deprecated in APPPATH\Controllers\PasswordReset.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PasswordReset->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-21 15:48:55 --> Invalid file: "check_email.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('check_email.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('check_email', [], true)
+ 3 APPPATH\Controllers\PasswordReset.php(25): view('check_email')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PasswordReset->checkEmail()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PasswordReset))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 15:49:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-21 15:49:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\PasswordReset::$session is deprecated in APPPATH\Controllers\PasswordReset.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PasswordReset->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 15:50:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-21 15:50:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\PasswordReset::$session is deprecated in APPPATH\Controllers\PasswordReset.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PasswordReset->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 15:54:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-21 15:54:08 --> [DEPRECATED] Creation of dynamic property App\Controllers\PasswordReset::$session is deprecated in APPPATH\Controllers\PasswordReset.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PasswordReset->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-21 15:56:49 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\PasswordReset.php on line 88.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\https---github.com-HumphreyDulo-CS1\\app\\Controllers\\PasswordReset.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\PasswordReset')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\PasswordReset')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\PasswordReset', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 15:57:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-21 15:57:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\PasswordReset::$session is deprecated in APPPATH\Controllers\PasswordReset.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PasswordReset->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 15:57:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-21 15:57:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\PasswordReset::$session is deprecated in APPPATH\Controllers\PasswordReset.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PasswordReset->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-21 15:57:40 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\PasswordReset.php on line 128.
+ 1 APPPATH\Controllers\PasswordReset.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\https---github.com-HumphreyDulo-CS1\\app\\Controllers\\PasswordReset.php', 128)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PasswordReset->save()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PasswordReset))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 16:05:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-21 16:05:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\PasswordReset::$session is deprecated in APPPATH\Controllers\PasswordReset.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PasswordReset->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-21 16:05:17 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\PasswordReset.php on line 127.
+ 1 APPPATH\Controllers\PasswordReset.php(127): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\https---github.com-HumphreyDulo-CS1\\app\\Controllers\\PasswordReset.php', 127)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PasswordReset->save()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PasswordReset))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 16:05:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-21 16:05:22 --> [DEPRECATED] Creation of dynamic property App\Controllers\PasswordReset::$session is deprecated in APPPATH\Controllers\PasswordReset.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PasswordReset->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 16:05:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-21 16:05:44 --> [DEPRECATED] Creation of dynamic property App\Controllers\PasswordReset::$session is deprecated in APPPATH\Controllers\PasswordReset.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PasswordReset->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 16:05:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 16:17:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-21 16:17:27 --> [DEPRECATED] Creation of dynamic property App\Controllers\PasswordReset::$session is deprecated in APPPATH\Controllers\PasswordReset.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PasswordReset->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 16:17:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-21 16:17:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\PasswordReset::$session is deprecated in APPPATH\Controllers\PasswordReset.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PasswordReset->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 16:23:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-21 16:23:30 --> [DEPRECATED] Creation of dynamic property App\Controllers\PasswordReset::$session is deprecated in APPPATH\Controllers\PasswordReset.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PasswordReset->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 16:23:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-21 16:23:36 --> [DEPRECATED] Creation of dynamic property App\Controllers\PasswordReset::$session is deprecated in APPPATH\Controllers\PasswordReset.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PasswordReset->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 16:24:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-21 16:24:02 --> [DEPRECATED] Creation of dynamic property App\Controllers\PasswordReset::$session is deprecated in APPPATH\Controllers\PasswordReset.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PasswordReset->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 16:24:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-21 16:24:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\PasswordReset::$session is deprecated in APPPATH\Controllers\PasswordReset.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PasswordReset->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 16:25:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-21 16:25:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\PasswordReset::$session is deprecated in APPPATH\Controllers\PasswordReset.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PasswordReset->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 16:25:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 16:25:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 16:25:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 16:25:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 16:29:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-21 16:29:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\PasswordReset::$session is deprecated in APPPATH\Controllers\PasswordReset.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PasswordReset->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 16:29:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-21 16:29:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\PasswordReset::$session is deprecated in APPPATH\Controllers\PasswordReset.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PasswordReset->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-21 16:29:26 --> Undefined variable $htmlTextContent
+in APPPATH\Controllers\PasswordReset.php on line 57.
+ 1 APPPATH\Controllers\PasswordReset.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $htmlTextContent', 'C:\\xampp\\htdocs\\https---github.com-HumphreyDulo-CS1\\app\\Controllers\\PasswordReset.php', 57)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PasswordReset->resetPassword()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PasswordReset))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 16:29:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-21 16:29:47 --> [DEPRECATED] Creation of dynamic property App\Controllers\PasswordReset::$session is deprecated in APPPATH\Controllers\PasswordReset.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PasswordReset->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 16:29:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-21 16:29:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\PasswordReset::$session is deprecated in APPPATH\Controllers\PasswordReset.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PasswordReset->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 16:29:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-21 16:29:54 --> [DEPRECATED] Creation of dynamic property App\Controllers\PasswordReset::$session is deprecated in APPPATH\Controllers\PasswordReset.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PasswordReset->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 16:30:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-21 16:30:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\PasswordReset::$session is deprecated in APPPATH\Controllers\PasswordReset.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PasswordReset->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 16:31:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-21 16:31:13 --> [DEPRECATED] Creation of dynamic property App\Controllers\PasswordReset::$session is deprecated in APPPATH\Controllers\PasswordReset.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PasswordReset->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 16:31:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 16:31:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 16:31:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 16:31:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 16:32:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 16:32:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 16:32:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 16:32:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 16:32:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 16:33:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 16:33:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 16:42:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-21 16:42:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\PasswordReset::$session is deprecated in APPPATH\Controllers\PasswordReset.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PasswordReset->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 16:42:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-21 16:42:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\PasswordReset::$session is deprecated in APPPATH\Controllers\PasswordReset.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PasswordReset->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 16:42:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-21 16:42:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\PasswordReset::$session is deprecated in APPPATH\Controllers\PasswordReset.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PasswordReset->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 16:43:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 16:43:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 16:43:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 16:43:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 16:43:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 16:43:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 16:43:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 16:43:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 16:43:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-21 16:43:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\PasswordReset::$session is deprecated in APPPATH\Controllers\PasswordReset.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PasswordReset->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 16:44:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-21 16:44:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\PasswordReset::$session is deprecated in APPPATH\Controllers\PasswordReset.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PasswordReset->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 16:44:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-21 16:44:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\PasswordReset::$session is deprecated in APPPATH\Controllers\PasswordReset.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PasswordReset->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 16:44:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-21 16:44:47 --> [DEPRECATED] Creation of dynamic property App\Controllers\PasswordReset::$session is deprecated in APPPATH\Controllers\PasswordReset.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PasswordReset->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 16:45:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-21 16:45:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\PasswordReset::$session is deprecated in APPPATH\Controllers\PasswordReset.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PasswordReset->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 16:45:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 16:45:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 16:45:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 16:45:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 16:45:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 17:21:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-21 17:21:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\PasswordReset::$session is deprecated in APPPATH\Controllers\PasswordReset.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PasswordReset->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 17:21:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 17:22:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 17:23:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-21 17:23:32 --> "validateUser" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 329.
+ 1 SYSTEMPATH\Validation\Validation.php(329): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('validateUser')
+ 2 SYSTEMPATH\Validation\Validation.php(179): CodeIgniter\Validation\Validation->processRules('password', 'password', 'Alex120203', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Log.php(31): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Log->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Log))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 17:33:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 17:33:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 17:33:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 17:33:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 17:34:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 17:34:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 17:34:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 17:36:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-21 17:36:35 --> [DEPRECATED] Creation of dynamic property App\Controllers\PasswordReset::$session is deprecated in APPPATH\Controllers\PasswordReset.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PasswordReset->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 17:36:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-21 17:36:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\PasswordReset::$session is deprecated in APPPATH\Controllers\PasswordReset.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PasswordReset->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 17:36:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 17:36:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 17:39:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 17:42:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 17:42:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 17:42:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 17:42:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 17:42:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-21 17:42:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\PasswordReset::$session is deprecated in APPPATH\Controllers\PasswordReset.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PasswordReset->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 17:42:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-21 17:42:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\PasswordReset::$session is deprecated in APPPATH\Controllers\PasswordReset.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PasswordReset->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 17:42:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-21 17:42:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\PasswordReset::$session is deprecated in APPPATH\Controllers\PasswordReset.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PasswordReset->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 17:43:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-21 17:43:36 --> [DEPRECATED] Creation of dynamic property App\Controllers\PasswordReset::$session is deprecated in APPPATH\Controllers\PasswordReset.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PasswordReset->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 17:44:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-21 17:44:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\PasswordReset::$session is deprecated in APPPATH\Controllers\PasswordReset.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PasswordReset->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 17:44:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 17:44:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 17:44:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 17:44:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 17:44:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

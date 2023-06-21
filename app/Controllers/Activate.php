@@ -10,6 +10,8 @@ class Activate extends BaseController
 {
     public function index()
     {
+        $data = [];
+		helper(['form']);
         if ($this->request->getMethod() === 'post') {
             $activationCode = $this->request->getPost('activation_code');
 
@@ -31,7 +33,9 @@ class Activate extends BaseController
                     $activationModel->delete($activation['activation_id']);
 
                     // Show success message or redirect to login page
-                    return view('customerlogin');
+                    echo view('templates/header', $data);
+                    echo view('customerlogin');
+                    echo view('templates/footer');
                 } else {
                     // User not found
                     $data['error'] = 'Invalid activation code.';

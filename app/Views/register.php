@@ -21,7 +21,7 @@
     <form method="post" action="<?php echo base_url('Auth'); ?>">
 
       <div class="form-group">
-        <label for="firstname">firstname:</label>
+        <label for="firstname">First Name:</label>
         <input type="text" name="firstname" class="form-control" required />
         <?php if (isset($validation)): ?>
           <small class="text-danger">
@@ -30,7 +30,7 @@
         <?php endif; ?>
       </div>
       <div class="form-group">
-        <label for="lastname">lastname:</label>
+        <label for="lastname">Last Name:</label>
         <input type="text" name="lastname" class="form-control" required />
         <?php if (isset($validation)): ?>
           <small class="text-danger">

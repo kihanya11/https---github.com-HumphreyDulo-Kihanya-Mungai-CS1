@@ -29,6 +29,10 @@
     <div class="container">
         <h2>Login</h2>
 
+            <?php if (isset($login_error)) : ?>
+            <div class="alert alert-danger"><?= $login_error ?></div>
+            <?php endif; ?>
+
         <form method="post" action="<?php echo base_url('Log'); ?>">
             <div class="form-group">
                 <label for="username">Username:</label>
@@ -44,7 +48,7 @@
             </div>
 
             <div class="buttons">
-                <a href="<?php echo base_url(''); ?>" class="btn btn-primary">Forgot Password?</a>
+                <a href="/forgot-password" class="btn btn-primary">Forgot Password?</a>
             </div>
 
             <div class="buttons">

@@ -11,6 +11,12 @@ class Login extends BaseController
     public function index()
     {
         
-        return view('customerlogin');
+        $data = [];
+		helper(['form']);
+
+        echo view('templates/header', $data);
+		echo view('customerlogin');
+		echo view('templates/footer');
+
     }
 }

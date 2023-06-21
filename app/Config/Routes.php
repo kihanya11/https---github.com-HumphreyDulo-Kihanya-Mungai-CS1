@@ -30,6 +30,14 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Register::index');
+$routes->get('/login', 'Login::index');
+$routes->get('forgot-password', 'PasswordReset::forgotPassword');
+$routes->get('reset_form/(:segment)', 'PasswordReset::reset_form/$1');
+$routes->post('password/reset', 'PasswordReset::resetPassword');
+$routes->post('password/save', 'PasswordReset::save', ['as' => 'password.save']);
+$routes->get('/check_email', 'PasswordReset::checkEmail');
+
+
 //$routes->post('/', 'Auth::index');
 //$routes->post('/', 'Log::index');
 
