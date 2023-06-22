@@ -46,7 +46,7 @@
 <body>
   <div class="container">
     <h2>User Registration</h2>
-    <form method="post" action="<?php echo base_url('Auth'); ?>">
+    <form method="post" style="max-width: 600px;" action="<?php echo base_url('Auth'); ?>">
   <div class="row col-12">
       <div class="form-group col-md-6">
         <label for="firstname">First Name:</label>
