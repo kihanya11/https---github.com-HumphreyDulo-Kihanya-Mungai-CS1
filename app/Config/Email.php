@@ -9,7 +9,7 @@ class Email extends BaseConfig
 
 {
     public string $fromEmail  = 'humphrey.dulo@strathmore.edu';
-    public string $fromName   = 'Safari Stay';
+    public string $fromName   = 'Humphrey Dulo';
     public string $recipients = '';
 
     /**
