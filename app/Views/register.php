@@ -47,8 +47,8 @@
   <div class="container">
     <h2>User Registration</h2>
     <form method="post" action="<?php echo base_url('Auth'); ?>">
-
-      <div class="form-group">
+  <div class="row col-12">
+      <div class="form-group col-md-6">
         <label for="firstname">First Name:</label>
         <input type="text" name="firstname" class="form-control" required />
         <?php if (isset($validation)): ?>
@@ -58,7 +58,7 @@
         <?php endif; ?>
       </div>
 
-      <div class="form-group">
+      <div class="form-group col-md-6">
         <label for="lastname">Last Name:</label>
         <input type="text" name="lastname" class="form-control" required />
         <?php if (isset($validation)): ?>
@@ -67,10 +67,11 @@
           </small>
         <?php endif; ?>
       </div>
+        </div>
 
-      <div class="form-group">
+      <div class="form-group col-6">
         <label for="username">Username:</label>
-        <input type="text" name="username" class="form-control" required />
+        <input type="text" name="username" class="form-control" value="" required />
         <?php if (isset($validation)): ?>
           <small class="text-danger">
             <?= $validation->getError('username') ?>
@@ -78,8 +79,9 @@
         <?php endif; ?>
       </div>
 
-      <div class="form-group">
-        <label for="dob">Date of Birth</label>
+      
+      <div class="form-group col-md-6">
+        <label for="dob">Date of Birth:</label>
         <input type="text" name="dob" class="form-control" required />
         <?php if (isset($validation)): ?>
           <small class="text-danger">
@@ -88,19 +90,20 @@
         <?php endif; ?>
       </div>
 
-      <div class="form-group">
+      <div class="form-group col-md-6">
         <label for="number">Phone number</label>
-        <input type="text" name="number" class="form-control" required />
+        <input type="text" name="number" class="form-control" value="" required />
         <?php if (isset($validation)): ?>
           <small class="text-danger">
             <?= $validation->getError('number') ?>
           </small>
         <?php endif; ?>
       </div>
+        
 
-      <div class="form-group">
+      <div class="form-group col-md-6">
         <label for="email">Email:</label>
-        <input type="text" name="email" class="form-control" required />
+        <input type="text" name="email" class="form-control" value="" required />
         <?php if (isset($validation)): ?>
           <small class="text-danger">
             <?= $validation->getError('email') ?>
@@ -108,10 +111,11 @@
         <?php endif; ?>
       </div>
 
-      <div class="form-group">
+      <div class="row col-12">
+      <div class="form-group col-md-6 ">
         <label for="password">Password:</label>
               <div class="password-tooltip">
-                  <input type="password" name="password" class="form-control" required />
+                  <input type="password" name="password" class="form-control" value="" required />
                   <span class="tooltip-content">
                       Password requirements:<br>
                       - Minimum 8 characters<br>
@@ -127,17 +131,18 @@
         <?php endif; ?>
         
       </div>
-      <div class="form-group">
+      <div class="form-group col-md-6">
         <label for="confirm_password">Confirm Password:</label>
-        <input type="password" name="confirm_password" class="form-control" required />
+        <input type="password" name="confirm_password" class="form-control" value="" required />
         <?php if (isset($validation)): ?>
           <small class="text-danger">
             <?= $validation->getError('confirm_password') ?>
           </small>
         <?php endif; ?>
       </div>
+        </div>
       <button type="submit" class="btn btn-primary">Register</button>
-      <p>Already have an account? <a href="<?php echo base_url('/login'); ?>">Login</p>
+      <p><a href="<?php echo base_url('/login'); ?>">Already have an account? </p>
     </form>
   </div>
 

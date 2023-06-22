@@ -27,24 +27,32 @@
 
 <body>
     <div class="container">
-        <h2>Login</h2>
+        <h2>  Login</h2>
 
+        <div class="col-6">
             <?php if (isset($login_error)) : ?>
             <div class="alert alert-danger"><?= $login_error ?></div>
             <?php endif; ?>
+            </div>
 
         <form method="post" action="<?php echo base_url('Log'); ?>">
-            <div class="form-group">
+            <div class="form-group col-md-6">
                 <label for="username">Username:</label>
-                <input type="text" name="username" class="form-control" required />
+                <input type="text" name="username" class="form-control" value="" required />
             </div>
-            <div class="form-group">
+            <div class="form-group col-md-6">
                 <label for="password">Password:</label>
-                <input type="password" name="password" class="form-control" required />
+                <input type="password" name="password" class="form-control" value="" required />
             </div>
+
+            
 
             <div class="button">
                 <button type="submit" class="btn btn-primary">Login</button>
+            </div>
+
+            <div class="button">
+            <p><a href="<?php echo base_url('/'); ?>" Dont have an account?></p>
             </div>
 
             <div class="buttons">

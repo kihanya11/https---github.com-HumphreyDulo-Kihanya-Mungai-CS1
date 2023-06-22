@@ -90,25 +90,30 @@ class Log extends BaseController
                 }
                 else{
                     // Invalid username or password
-                    $data['login_error'] = 'Invalid username or password';
+                    $data['login_error'] = 'Incorrect username or password';
                         echo view('templates/header', $data);
                         echo view('customerlogin');
                         echo view('templates/footer');
-                
 
                 }
 
-                
-              
             } 
+            else{
+                $data['validation'] = $this->validator;
+                $data['login_error'] = 'Invalid username, enter the correct username or register';
+                echo view('templates/header', $data);
+                echo view('customerlogin');
+                echo view('templates/footer');
+
+            }
         }
         else{
             $data['validation'] = $this->validator;
             $data['login_error'] = 'Invalid username or password';
-            return view('login', $data);
+            echo view('templates/header', $data);
+            echo view('customerlogin');
+            echo view('templates/footer');
 
-        
-        
         }
     }
 
