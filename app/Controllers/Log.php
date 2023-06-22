@@ -20,6 +20,11 @@ class Log extends BaseController
 
     public function index()
     {
+        $data = [];
+       helper(['form']);
+
+       
+
         $rules = [
             'username' => ['rules' => 'required|min_length[1]|max_length[255]'],
             'password' => ['rules' => 'required']
@@ -45,6 +50,7 @@ class Log extends BaseController
                         $sessionData = [
                             'user_id' => $user['id'],
                             'username' => $user['username'],
+                            'isLoggedIn' => true,
                             // Add more session data as needed
                         ];
                         $this->session->set($sessionData);
@@ -52,7 +58,9 @@ class Log extends BaseController
                         // Pass session data to the view
                         $data['username'] = $user['username'];
 
-                        return view('dashboard', $data);
+                        echo view('templates/header', $data);
+                        echo view('dashboard');
+                        echo view('templates/footer');
                     } else {
                         // User account is not yet activated
                         $data['activation_error'] = 'Your account is not yet activated. Please activate your account first before logging in.';
@@ -80,15 +88,34 @@ class Log extends BaseController
 
                     }
                 }
+                else{
+                    // Invalid username or password
+                    $data['login_error'] = 'Incorrect username or password';
+                        echo view('templates/header', $data);
+                        echo view('customerlogin');
+                        echo view('templates/footer');
 
-                // Invalid username or password
-                $data['login_error'] = 'Invalid username or password';
-                return view('customerlogin', $data);
-            } else {
-                // User
+                }
 
+            } 
+            else{
+                $data['validation'] = $this->validator;
+                $data['login_error'] = 'Invalid username, enter the correct username or register';
+                echo view('templates/header', $data);
+                echo view('customerlogin');
+                echo view('templates/footer');
 
             }
         }
+        else{
+            $data['validation'] = $this->validator;
+            $data['login_error'] = 'Invalid username or password';
+            echo view('templates/header', $data);
+            echo view('customerlogin');
+            echo view('templates/footer');
+
+        }
     }
+
+    
 }

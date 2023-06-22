@@ -27,7 +27,12 @@ class Auth extends BaseController
             'dob' => ['rules' => 'required|min_length[4]|max_length[10]'],
             'number' => ['rules' => 'required|min_length[9]|max_length[10]'],
             'email' => ['rules' => 'required|min_length[4]|max_length[255]|valid_email|is_unique[tbl_users.email]'],
-            'password' => ['rules' => 'required|min_length[8]|max_length[255]'],
+            'password' => [
+                'rules' => 'required|min_length[8]|max_length[255]|regex_match[/^(?=.*[A-Z])(?=.*\d).+$/]',
+                'errors' => [
+                    'regex_match' => 'The password must contain at least one capital letter and one number.',
+                ],
+            ],
             'confirm_password' => ['label' => 'confirm password', 'rules' => 'matches[password]']
         ];
 
@@ -72,6 +77,7 @@ class Auth extends BaseController
             $sessionData = [
                 'user_id' => $user['id'],
                 'username' => $user['username'],
+                'isLoggedIn' => true,
                 // Add more session data as needed
             ];
             $this->session->set($sessionData);
@@ -82,7 +88,9 @@ class Auth extends BaseController
             return redirect()->to('Activate');
         } else {
             $data['validation'] = $this->validator;
-            return view('register', $data);
+            echo view('templates/header');
+            echo view('register', $data);
+            echo view('templates/footer');
         }
 
     }

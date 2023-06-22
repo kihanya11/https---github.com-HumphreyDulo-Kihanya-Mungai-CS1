@@ -9,7 +9,12 @@ class Register extends BaseController
 {
     public function index()
     {
-    return view('register');
+        $data = [];
+		helper(['form']);
+
+        echo view('templates/header', $data);
+		echo view('register');
+		echo view('templates/footer');
     
     }
    
