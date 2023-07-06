@@ -37,6 +37,14 @@ $routes->post('password/reset', 'PasswordReset::resetPassword');
 $routes->post('password/save', 'PasswordReset::save', ['as' => 'password.save']);
 $routes->get('/check_email', 'PasswordReset::checkEmail');
 
+$routes->post('/admin/registerAdmin', 'Adminlogin::registerAdmin');
+$routes->get('/admin/register', 'Adminlogin::adminregisterform');
+$routes->get('/admin/login', 'Adminlogin::adminloginform');
+$routes->get('/admin/dashboard', 'AdminController:admindashboard' );
+$routes->post('/admin/log', 'Adminlogin:index' );
+
+
+
 
 //$routes->post('/', 'Auth::index');
 //$routes->post('/', 'Log::index');
