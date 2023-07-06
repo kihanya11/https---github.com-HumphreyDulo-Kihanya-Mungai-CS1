@@ -22,6 +22,10 @@ class Dashboard extends BaseController
         $notificationModel = new NotificationModel();
         $notificationCount = $notificationModel->countAll();
 
+             // Count the number of pending notifications
+             $notificationCount = $notificationModel->where('status','pending')->countAllResults();
+    
+        
         // Pass the notification count to the view
         return view('admin_dashboard', ['notificationCount' => $notificationCount]);
     }
