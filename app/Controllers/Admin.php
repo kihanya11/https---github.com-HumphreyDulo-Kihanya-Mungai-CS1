@@ -45,17 +45,24 @@ class Admin extends BaseController
 
     public function index()
     {
-
         // Load the necessary models
         $notificationModel = new NotificationModel();
-
+    
         // Get all notifications
         $notifications = $notificationModel->findAll();
+    
+        // Count the number of pending notifications
+        $notificationCount = $notificationModel->where('status','pending')->countAllResults();
+    
+        // Pass the notifications and count to the view
+        return view('admin', [
+            'notifications' => $notifications,
+            'notificationCount' => $notificationCount
+        ]);
 
-        // Pass the notifications to the view
-        return view('admin', ['notifications' => $notifications]);
+        
     }
-
+    
     public function accept()
 {
     // Load the necessary models

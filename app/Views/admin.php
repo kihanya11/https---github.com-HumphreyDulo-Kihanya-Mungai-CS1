@@ -59,6 +59,7 @@
                 <?php endforeach; ?>
             </tbody>
         </table>
+        <a href="<?php echo base_url('admin_dashboard'); ?>" class="btn btn-primary">Back to Admin Dashboard</a>
     </div>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
