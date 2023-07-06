@@ -10,9 +10,11 @@ use App\Models\ResetToken;
 
 class PasswordReset extends BaseController
 {
+    protected $session;
     public function __construct()
     {
         $this->session = \Config\Services::session();
+
     }
 
     public function forgotPassword()
@@ -28,7 +30,7 @@ class PasswordReset extends BaseController
 
     public function resetPassword()
     {
-        
+
         // Get the submitted email
         $email = $this->request->getPost('email');
 
@@ -72,7 +74,7 @@ class PasswordReset extends BaseController
         }
     }
 
-        public function reset_form($token)
+    public function reset_form($token)
     {
         // Check if the reset link has been sent and retrieve the reset token from the session
         $resetLinkSent = $this->session->getFlashdata('reset_link_sent');
@@ -80,59 +82,58 @@ class PasswordReset extends BaseController
 
         // Redirect the user to the appropriate page if the reset link has not been sent or the token is missing
         //if (!$resetLinkSent || empty($sessionToken) || $sessionToken !== $token) {
-          //  return redirect()->to('/password/reset');
-          //  }
+        //  return redirect()->to('/password/reset');
+        //  }
 
-        return view('password_reset_form', ['token' => $token]);    
+        return view('password_reset_form', ['token' => $token]);
     }
 
 
     public function save()
     {
-    // Retrieve the form data
-    $password = $this->request->getPost('password');
-    $confirmPassword = $this->request->getPost('confirm_password');
-    $resetToken = $this->request->getPost('token');
+        // Retrieve the form data
+        $password = $this->request->getPost('password');
+        $confirmPassword = $this->request->getPost('confirm_password');
+        $resetToken = $this->request->getPost('token');
 
-    // Validate the form data
-    $validationRules = [
-        'password' => [
+        // Validate the form data
+        $validationRules = [
+            'password' => [
                 'rules' => 'required|min_length[8]|max_length[255]|regex_match[/^(?=.*[A-Z])(?=.*\d).+$/]',
                 'errors' => [
                     'regex_match' => 'The password must contain at least one capital letter and one number.',
                 ],
             ],
             'confirm_password' => ['label' => 'confirm password', 'rules' => 'matches[password]']
-    ];
+        ];
 
-    if (!$this->validate($validationRules)) {
-        // Validation failed, redirect back to the password reset form with errors
-        return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
+        if (!$this->validate($validationRules)) {
+            // Validation failed, redirect back to the password reset form with errors
+            return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
+        }
+
+        // Load the ResetToken model
+        $resetTokenModel = new ResetToken();
+
+        // Retrieve the reset token data from the database
+        $tokenData = $resetTokenModel->where('token', $resetToken)->first();
+
+        // Check if the reset token exists and is not expired
+        /* if (!$tokenData || time() > $tokenData['expires_at']) {
+             // Invalid or expired reset token, handle the error accordingly
+             return redirect()->to('/')->with('error', 'Invalid or expired reset token.');
+         } */
+
+        // Update the user's password
+        $userModel = new Users();
+        $user = $userModel->where('email', $tokenData['email'])->first();
+        $userModel->update($user['id'], ['password' => password_hash($password, PASSWORD_DEFAULT)]);
+
+        // Delete the used reset token from the database
+        $resetTokenModel->where('token', $resetToken)->delete();
+
+        // Redirect the user to a success page or any other desired action
+        return redirect()->to('/login')->with('success', 'Password reset successful. You can now log in with your new password.');
     }
 
-    // Load the ResetToken model
-    $resetTokenModel = new ResetToken();
-
-    // Retrieve the reset token data from the database
-    $tokenData = $resetTokenModel->where('token', $resetToken)->first();
-
-    // Check if the reset token exists and is not expired
-   /* if (!$tokenData || time() > $tokenData['expires_at']) {
-        // Invalid or expired reset token, handle the error accordingly
-        return redirect()->to('/')->with('error', 'Invalid or expired reset token.');
-    } */
-
-    // Update the user's password
-    $userModel = new Users();
-    $user = $userModel->where('email', $tokenData['email'])->first();
-    $userModel->update($user['id'], ['password' => password_hash($password, PASSWORD_DEFAULT)]);
-
-    // Delete the used reset token from the database
-    $resetTokenModel->where('token', $resetToken)->delete();
-
-    // Redirect the user to a success page or any other desired action
-    return redirect()->to('/login')->with('success', 'Password reset successful. You can now log in with your new password.');
 }
-
-}
-

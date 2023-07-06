@@ -3,6 +3,9 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+use App\Models\Activation;
+use App\Models\Users;
+use CodeIgniter\Config\Services;
 
 class ResendActivation extends BaseController
 {
