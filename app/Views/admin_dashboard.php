@@ -1,17 +1,15 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <title></title>
-
-  </head>
-  <body>
-    <?php
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ 
+</head>
+<body>
+<?php
       $uri = service('uri');
      ?>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+     
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
       <a class="navbar-brand" href="/">SafariStay</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,10 +19,10 @@
       <?php if (session()->get('isLoggedIn')): ?>
         <ul class="navbar-nav mr-auto">
           <li class="nav-item <?= ($uri->getSegment(1) == 'dashboard' ? 'active' : null) ?>">
-            <a class="nav-link"  href="/dashboard">Dashboard</a>
+            <a class="nav-link"  href="/admin_dashboard">Dashboard</a>
           </li>
           <li class="nav-item <?= ($uri->getSegment(1) == 'profile' ? 'active' : null) ?>">
-            <a class="nav-link" href="/profile">Profile</a>
+            <a class="nav-link" href="/admin_profile">Profile</a>
           </li>
         </ul>
         <ul class="navbar-nav my-2 my-lg-0">
@@ -33,18 +31,19 @@
           </li>
         </ul>
       <?php else: ?>
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item <?= ($uri->getSegment(1) == 'login' ? 'active' : null) ?>">
-            <a class="nav-link" href="/login">Login</a>
-          </li>
-          <li class="nav-item <?= ($uri->getSegment(1) == '' ? 'active' : null) ?>">
-            <a class="nav-link" href="/">Register</a>
-          </li>
+        <ul class="navbar-nav mr-auto">  
           <li class="nav-item <?= ($uri->getSegment(1) == 'admin' ? 'active' : null) ?>">
-            <a class="nav-link" href="/admin-login">Admin</a>
+            <a class="nav-link" href="/admin-login">Admin Login</a>
           </li>
         </ul>
         <?php endif; ?>
       </div>
       </div>
     </nav>
+
+    <h1>Welcome to your dashboard, <?= session()->get('admin_name') ?>! </h1>
+    <p>Notifications:<span class="badge badge-primary"><?php echo $notificationCount; ?></span></p>
+    <a href="<?php echo base_url('admin'); ?>" class="btn btn-primary">View Notifications</a>
+ 
+</body>
+</html>
