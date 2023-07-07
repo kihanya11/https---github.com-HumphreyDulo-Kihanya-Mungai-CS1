@@ -1,16 +1,17 @@
-<html>
-<head>
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
- 
-</head>
-<body>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title></title>
 
-<?php
+  </head>
+  <body>
+    <?php
       $uri = service('uri');
      ?>
-     
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
       <a class="navbar-brand" href="/">SafariStay</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,10 +42,3 @@
       </div>
       </div>
     </nav>
-
-    <h1>Welcome to your dashboard, <?= session()->get('admin_name') ?>! </h1>
-    <p>Notifications:<span class="badge badge-primary"><?php echo $notificationCount; ?></span></p>
-    <a href="<?php echo base_url('admin'); ?>" class="btn btn-primary">View Notifications</a>
- 
-</body>
-</html>
