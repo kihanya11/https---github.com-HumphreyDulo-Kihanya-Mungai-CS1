@@ -40,7 +40,8 @@
         <?php endif; ?>
       </div>
       </div>
-    </nav>
+  </nav>
+
     <div class="container">
         <h2>Admin Notifications</h2>
         <?php if (session()->has('success')): ?>
