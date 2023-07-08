@@ -21,15 +21,7 @@ class AdminModel extends Model
 
         return $data;
     }
-    protected $DBGroup          = 'default';
-    protected $table            = 'tbl_admins';
-    protected $primaryKey = 'admin_id';
-    protected $useAutoIncrement = true;
-    protected $returnType       = 'array';
-    protected $useSoftDeletes   = false;
-    protected $protectFields    = true;
-    protected $allowedFields = ['admin_name', 'admin_id', 'password', 'created_at', 'updated_at'];
-
+   
     // Dates
     protected $useTimestamps = false;
     protected $dateFormat    = 'datetime';
@@ -45,9 +37,7 @@ class AdminModel extends Model
 
     // Callbacks
     protected $allowCallbacks = true;
-    protected $beforeInsert   = [];
     protected $afterInsert    = [];
-    protected $beforeUpdate   = [];
     protected $afterUpdate    = [];
     protected $beforeFind     = [];
     protected $afterFind      = [];
