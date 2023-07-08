@@ -4,6 +4,8 @@ namespace App\Controllers;
 
 use App\Models\NotificationModel;
 use App\Models\VendorModel;
+use App\Models\AdminModel;
+use App\Models\Users;
 use CodeIgniter\Config\Services;
 
 class Admin extends BaseController
@@ -53,6 +55,8 @@ class Admin extends BaseController
     
         // Count the number of pending notifications
         $notificationCount = $notificationModel->where('status','pending')->countAllResults();
+
+        $data['notificationCount'] = $notificationCount;
     
         // Pass the notifications and count to the view
         return view('admin', [
@@ -146,6 +150,34 @@ class Admin extends BaseController
         // Redirect back to the notifications page
         return redirect()->back()->with('success', 'Notification status updated successfully');
     }
+
+
+    public function viewUsers()
+    {
+        $model = new Users();
+        $data['users'] = $model->findAll(); // Fetch all users from the model
+
+        $notificationModel = new NotificationModel();
+        $notificationCount = $notificationModel->where('status','pending')->countAllResults();
+        $data['notificationCount'] = $notificationCount;
+
+
+
+        echo view('viewusers', $data);
+    }
+
+    public function delete_user()
+    {
+        $model = new Users();
+        $userId = $this->request->getPost('id');
+
+        // Perform the deletion based on the user ID
+        // Adjust the logic according to your database schema and implementation
+        $model->deleteUser($userId);
+
+        return redirect()->back()->with('success', 'User deleted successfully.');
+    }
+
 
 
 }

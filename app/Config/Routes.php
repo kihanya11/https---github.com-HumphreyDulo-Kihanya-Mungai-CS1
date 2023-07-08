@@ -52,6 +52,11 @@ $routes->get('admin', 'Admin::index');
 $routes->get('admin/accept/(:num)', 'Admin::accept/$1');
 $routes->get('admin/deny/(:num)', 'Admin::deny/$1');
 
+$routes->post('/admin/delete_user', 'Admin::delete_user');
+$routes->get('/admin/viewusers', 'Admin::viewUsers');
+
+
+
 
 
 $routes->get('/vendor_registration', 'VendorController::index');
