@@ -88,6 +88,10 @@ $routes->get('admin/deny/(:num)', 'Admin::deny/$1');
 
 $routes->post('post', 'Post::add_product');
 
+$routes->get('/admin/products', 'Admin::viewProducts');
+$routes->get('admin/delete_product/(:num)', 'Admin::deleteProduct/$1');
+
+
 
 
 
