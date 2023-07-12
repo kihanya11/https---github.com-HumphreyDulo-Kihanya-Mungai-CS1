@@ -111,8 +111,10 @@ Below is the overview of how the application is used for two categories of users
 
 In the context of this web application, a customer is any user who wishes to search for tourist facilities in Kenya.
 To do this, they can follow the simple steps below:
-1. Register as a customer and log in.
-2. Once logged in, they will have the ability to access the web application
+1. When a user loads our application, they are welcomed by our landing page, which will prompt the to 'Explore' the application 
+2. Afterwards you can Register as a customer and log in.
+3. Once logged in, they will have the ability to access the web application fully as a user
+4. They will be able to view all the places offered in the application
 ....
 
 ### Vendors
