@@ -37,9 +37,6 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                            <a class="nav-link" href="<?= base_url('vendor_dashboard') ?>">Dashboard</a>
-                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="Post">Add Product</a>
                         </li>
@@ -137,4 +134,5 @@
 <?php endif; ?>
 </body>
 
+</html>
 </html>
