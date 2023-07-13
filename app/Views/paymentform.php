@@ -27,6 +27,10 @@
                 <input type="text" name="cvv" class="form-control" required>
             </div>
             <button type="submit" class="btn btn-primary">Pay</button>
+
+
+            <a href="PayChoice" class="btn btn-primary">Back </a>
+
         </form>
     </div>
 
