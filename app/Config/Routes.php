@@ -29,8 +29,9 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Register::index');
+$routes->get('/register', 'Register::index');
 $routes->get('/login', 'Login::index');
+$routes->get('/', 'LandingPageController::index');
 
 $routes->get('forgot-password', 'PasswordReset::forgotPassword');
 $routes->get('reset_form/(:segment)', 'PasswordReset::reset_form/$1');
@@ -87,6 +88,12 @@ $routes->get('admin/accept/(:num)', 'Admin::accept/$1');
 $routes->get('admin/deny/(:num)', 'Admin::deny/$1');
 
 $routes->post('post', 'Post::add_product');
+
+$routes->get('/admin/products', 'Admin::viewProducts');
+$routes->get('admin/delete_product/(:num)', 'Admin::deleteProduct/$1');
+$routes->get('product/(:num)', 'ProductController::show/$1');
+$routes->post('product/booking/(:num)', 'BookingController::index/$1');
+
 
 
 

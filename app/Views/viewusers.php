@@ -20,6 +20,8 @@
                     <th>Email</th>
                     <th>Username</th>
                     <th>Date of Birth</th>
+                    <th>Phone Number</th>
+                    <th>Role</th>
                     <th>Action</th>
                 </tr>
             </thead>
@@ -31,6 +33,17 @@
                         <td><?= $user['email']; ?></td>
                         <td><?= $user['username']; ?></td>
                         <td><?= $user['dob']; ?></td>
+                        <td><?= $user['number']; ?></td>
+
+                        <td>
+                            <?php if ($user['role'] == 1): ?>
+                                Vendor
+                            <?php elseif ($user['role'] == 2): ?>
+                                Customer
+                            <?php else: ?>
+                                Unknown
+                            <?php endif; ?>
+                        </td>
                         <td>
                             <form action="<?= base_url('admin/delete_user'); ?>" method="post" style="display: inline;">
                                 <input type="hidden" name="id" value="<?= $user['id']; ?>">

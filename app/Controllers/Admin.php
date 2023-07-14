@@ -6,6 +6,7 @@ use App\Models\NotificationModel;
 use App\Models\VendorModel;
 use App\Models\AdminModel;
 use App\Models\Users;
+use App\Models\Products;
 use CodeIgniter\Config\Services;
 
 class Admin extends BaseController
@@ -164,6 +165,19 @@ class Admin extends BaseController
         echo view('viewusers', $data);
     }
 
+    public function viewProducts()
+    {
+        $model = new Products();
+        $data['products'] = $model->findAll(); // Fetch all products from the model
+    
+        $notificationModel = new NotificationModel();
+        $notificationCount = $notificationModel->where('status', 'pending')->countAllResults();
+        $data['notificationCount'] = $notificationCount;
+    
+        return view('viewproducts', $data);
+    }
+    
+
     public function delete_user()
     {
         $model = new Users();
@@ -175,6 +189,16 @@ class Admin extends BaseController
 
         return redirect()->back()->with('success', 'User deleted successfully.');
     }
+
+    public function deleteProduct($productId)
+{
+    $model = new Products();
+
+    // Perform the deletion based on the product ID
+    $model->delete($productId);
+
+    return redirect()->back()->with('success', 'Product deleted successfully.');
+}
 
 
 
