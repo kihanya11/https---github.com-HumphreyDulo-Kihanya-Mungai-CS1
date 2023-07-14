@@ -56,8 +56,6 @@ class Admin extends BaseController
     
         // Count the number of pending notifications
         $notificationCount = $notificationModel->where('status','pending')->countAllResults();
-
-        $data['notificationCount'] = $notificationCount;
     
         // Pass the notifications and count to the view
         return view('admin', [
