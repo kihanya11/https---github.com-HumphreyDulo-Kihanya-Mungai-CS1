@@ -64,9 +64,7 @@ Before getting started, ensure that you have the following software installed on
 4. Run the following command to run the migrations and create the necessary tables:
    ```terminal
    php spark migrate
-   4. Run the following command to run the migrations and create the necessary tables:
-   ```terminal
-   php spark migrate
+  
    
 
 
