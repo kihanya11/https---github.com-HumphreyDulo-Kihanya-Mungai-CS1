@@ -142,7 +142,7 @@
       </div>
         </div>
       <button type="submit" class="btn btn-primary">Register</button>
-      <p><a href="<?php echo base_url('/login'); ?>">Already have an account? </p>
+      <p><a href="<?php echo base_url('Log'); ?>">Already have an account? </p>
     </form>
   </div>
 

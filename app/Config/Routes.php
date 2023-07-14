@@ -29,13 +29,104 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Register::index');
+$routes->get('/register', 'Register::index');
 $routes->get('/login', 'Login::index');
+$routes->get('/', 'LandingPageController::index');
+
 $routes->get('forgot-password', 'PasswordReset::forgotPassword');
 $routes->get('reset_form/(:segment)', 'PasswordReset::reset_form/$1');
 $routes->post('password/reset', 'PasswordReset::resetPassword');
 $routes->post('password/save', 'PasswordReset::save', ['as' => 'password.save']);
 $routes->get('/check_email', 'PasswordReset::checkEmail');
+$routes->get('/admin-login', 'AdminLoginController::index');
+
+
+$routes->get('/vendor_registration', 'VendorController::index');
+$routes->post('/vendor_registration', 'VendorController::register');
+
+$routes->get('admin_dashboard', 'Dashboard::dashboard');
+
+$routes->get('admin/notifications', 'Admin::notifications');
+$routes->post('admin/handle-registration/(:num)/(:segment)', 'Admin::handleRegistration/$1/$2');
+$routes->get('admin', 'Admin::index');
+
+$routes->get('admin/accept/(:num)', 'Admin::accept/$1');
+$routes->get('admin/deny/(:num)', 'Admin::deny/$1');
+
+$routes->post('/admin/delete_user', 'Admin::delete_user');
+$routes->get('/admin/viewusers', 'Admin::viewUsers');
+
+
+
+
+
+$routes->get('/vendor_registration', 'VendorController::index');
+$routes->post('/vendor_registration', 'VendorController::register');
+
+$routes->get('admin_dashboard', 'Dashboard::dashboard');
+
+$routes->get('admin/notifications', 'Admin::notifications');
+$routes->post('admin/handle-registration/(:num)/(:segment)', 'Admin::handleRegistration/$1/$2');
+$routes->get('admin', 'Admin::index');
+
+$routes->get('admin/accept/(:num)', 'Admin::accept/$1');
+$routes->get('admin/deny/(:num)', 'Admin::deny/$1');
+
+
+
+$routes->get('/vendor_registration', 'VendorController::index');
+$routes->post('/vendor_registration', 'VendorController::register');
+$routes->get('vendor_dashboard', 'VendorController::vendor');
+
+$routes->get('admin_dashboard', 'Dashboard::dashboard');
+
+$routes->get('admin/notifications', 'Admin::notifications');
+$routes->post('admin/handle-registration/(:num)/(:segment)', 'Admin::handleRegistration/$1/$2');
+
+$routes->get('admin', 'Admin::index');
+$routes->get('admin/accept/(:num)', 'Admin::accept/$1');
+$routes->get('admin/deny/(:num)', 'Admin::deny/$1');
+
+$routes->post('post', 'Post::add_product');
+
+$routes->get('/admin/products', 'Admin::viewProducts');
+$routes->get('admin/delete_product/(:num)', 'Admin::deleteProduct/$1');
+$routes->get('product/(:num)', 'ProductController::show/$1');
+$routes->post('product/booking/(:num)', 'BookingController::index/$1');
+
+$routes->post('paymentform', 'PaymentController::process');
+$routes->get('paymentform', 'PaymentController::index');
+$routes->get('paymentSuccess', 'PaymentController::success');
+$routes->get('paymentError', 'PaymentController::error');
+
+$routes->get('MpesaForm', 'PaymentController::MPESA');
+$routes->post('MpesaForm', 'PaymentController::Mprocess');
+
+$routes->get('MPerror', 'PaymentController::MPerror');
+$routes->get('MPsuccess', 'PaymentController::MPsuccess');
+
+
+
+
+$routes->post('/admin/registerAdmin', 'Adminlogin::registerAdmin');
+$routes->get('/admin/register', 'Adminlogin::adminregisterform');
+$routes->get('/admin/login', 'Adminlogin::adminloginform');
+$routes->get('/admin/dashboard', 'AdminController:admindashboard' );
+$routes->post('/admin/log', 'Adminlogin:index' );
+
+
+$routes->get('/vendor_registration', 'VendorController::index');
+$routes->post('/vendor_registration', 'VendorController::register');
+
+$routes->get('admin_dashboard', 'Dashboard::dashboard');
+
+$routes->get('admin/notifications', 'Admin::notifications');
+$routes->post('admin/handle-registration/(:num)/(:segment)', 'Admin::handleRegistration/$1/$2');
+$routes->get('admin', 'Admin::index');
+
+$routes->get('admin/accept/(:num)', 'Admin::accept/$1');
+$routes->get('admin/deny/(:num)', 'Admin::deny/$1');
+
 
 
 //$routes->post('/', 'Auth::index');
