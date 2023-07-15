@@ -81,7 +81,10 @@
                         <?php endif; ?>
                 <div class="card-body">
                 <form action="<?= site_url('product/booking/' . $product['id']); ?>" method="post">
+
                 <input type="hidden" name="productId" value="<?= $product['id']; ?>">
+                <input type="hidden" name="vendorId" value="<?= $product['vendorid']; ?>">
+
 
                 <div class="form-group">
                     <label for="checkInDate">Check-in Date</label>

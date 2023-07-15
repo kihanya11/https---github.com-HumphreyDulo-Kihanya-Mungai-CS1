@@ -26,6 +26,8 @@ class BookingController extends Controller
         $checkOutDate = $this->request->getPost('checkOutDate');
         $totalPrice = $this->request->getPost('totalPrice');
         $productId = $this->request->getPost('productId'); // Get the product ID from the form
+        $vendorId = $this->request->getPost('vendorId'); // Get the product ID from the form
+
     
         // Create a new instance of the BookingModel
         $bookingModel = new BookingModel();
@@ -34,6 +36,7 @@ class BookingController extends Controller
         // Prepare the data for insertion
         $data = [
             'user_id' => $userId,
+            'vendor_id'=> $vendorId,
             'product_id' => $productId,
             'checkin_date' => $checkInDate,
             'checkout_date' => $checkOutDate,

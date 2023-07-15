@@ -91,6 +91,8 @@ $routes->post('post', 'Post::add_product');
 
 $routes->get('/admin/products', 'Admin::viewProducts');
 $routes->get('admin/delete_product/(:num)', 'Admin::deleteProduct/$1');
+$routes->get('vendor/delete_product/(:num)', 'VendorController::deleteProduct/$1');
+
 $routes->get('product/(:num)', 'ProductController::show/$1');
 $routes->post('product/booking/(:num)', 'BookingController::index/$1');
 
