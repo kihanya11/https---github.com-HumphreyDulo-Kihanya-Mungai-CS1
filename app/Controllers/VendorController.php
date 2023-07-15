@@ -138,6 +138,7 @@ class VendorController extends BaseController
 
     }
 
+
     public function history()
         {
             // Get the user ID from the session or authentication library
@@ -190,3 +191,4 @@ class VendorController extends BaseController
             return redirect()->to('login');
         }
 }
+

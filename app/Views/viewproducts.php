@@ -20,7 +20,7 @@
             <div class="card mb-3">
                 <div class="row no-gutters">
                     <div class="col-md-4">
-                                <div id="carousel<?= $product['id']; ?>" class="carousel slide" data-ride="carousel">
+                    <div id="carousel<?= $product['id']; ?>" class="carousel slide" data-ride="carousel">
                                     <div class="carousel-inner">
                                         <?php
                                         $images = explode(',', $product['product_images']);
@@ -29,7 +29,7 @@
                                             $imageClass = $firstImage ? 'active' : '';
                                             ?>
                                             <div class="carousel-item <?= $imageClass; ?>">
-                                            <img src="<?= base_url('/' . $image); ?>" class="card-img" alt="Product Image">
+                                                <img src="<?= base_url('/' . $image); ?>" class="card-img" alt="Product Image">
                                             </div>
                                             <?php
                                             $firstImage = false;
@@ -44,8 +44,7 @@
                                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                         <span class="sr-only">Next</span>
                                     </a>
-                                </div>
-                    </div>
+                                </div>                    </div>
                     <div class="col-md-8">
                         <div class="card-body">
                             <h5 class="card-title"><?= $product['product_name']; ?></h5>
