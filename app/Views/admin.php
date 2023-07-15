@@ -102,11 +102,8 @@
 
         <a href="<?php echo base_url('admin_dashboard'); ?>" class="btn btn-primary">Back to Admin Dashboard</a>
     </div>
-<<<<<<< HEAD
-=======
     <?= $this->endSection() ?>
 
->>>>>>> 25b28d6e27320ec72ac653c109eec7fbdc2d67ee
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 

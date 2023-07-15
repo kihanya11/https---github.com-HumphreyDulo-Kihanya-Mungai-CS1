@@ -127,6 +127,9 @@ $routes->get('admin', 'Admin::index');
 $routes->get('admin/accept/(:num)', 'Admin::accept/$1');
 $routes->get('admin/deny/(:num)', 'Admin::deny/$1');
 
+$routes->get('booking-history', 'BookingController::history');
+$routes->get('booking-all', 'BookingController::all');
+
 
 
 //$routes->post('/', 'Auth::index');
