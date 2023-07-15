@@ -94,6 +94,17 @@ $routes->get('admin/delete_product/(:num)', 'Admin::deleteProduct/$1');
 $routes->get('product/(:num)', 'ProductController::show/$1');
 $routes->post('product/booking/(:num)', 'BookingController::index/$1');
 
+$routes->post('paymentform', 'PaymentController::process');
+$routes->get('paymentform', 'PaymentController::index');
+$routes->get('paymentSuccess', 'PaymentController::success');
+$routes->get('paymentError', 'PaymentController::error');
+
+$routes->get('MpesaForm', 'PaymentController::MPESA');
+$routes->post('MpesaForm', 'PaymentController::Mprocess');
+
+$routes->get('MPerror', 'PaymentController::MPerror');
+$routes->get('MPsuccess', 'PaymentController::MPsuccess');
+
 
 
 
@@ -115,6 +126,9 @@ $routes->get('admin', 'Admin::index');
 
 $routes->get('admin/accept/(:num)', 'Admin::accept/$1');
 $routes->get('admin/deny/(:num)', 'Admin::deny/$1');
+
+$routes->get('booking-history', 'BookingController::history');
+$routes->get('booking-all', 'BookingController::all');
 
 
 
