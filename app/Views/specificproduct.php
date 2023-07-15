@@ -74,6 +74,11 @@
                 <div class="card-header">
                     Booking Details
                 </div>
+                <?php if (session()->has('success_message')): ?>
+                     <div class="alert alert-success">
+                    <?php echo session('success_message'); ?>
+                            </div>
+                        <?php endif; ?>
                 <div class="card-body">
                 <form action="<?= site_url('product/booking/' . $product['id']); ?>" method="post">
                 <input type="hidden" name="productId" value="<?= $product['id']; ?>">
