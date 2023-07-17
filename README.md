@@ -8,7 +8,7 @@ This web application simulates the process of finding accommodation locations.
 - Composer
 - Stripe for payment integration
   
-## ## Installation 
+## Installation 
 
 To automate the installation process, you can use the following bash script:
 
