@@ -132,7 +132,9 @@ $routes->get('admin/deny/(:num)', 'Admin::deny/$1');
 $routes->get('booking-history', 'BookingController::history');
 $routes->get('booking-all', 'BookingController::all');
 
+$routes->get('validate_product', 'Admin::validateproduct');
 
+$routes->get('mpesa/stkpush', 'MpesaController::stkPush');
 
 //$routes->post('/', 'Auth::index');
 //$routes->post('/', 'Log::index');
